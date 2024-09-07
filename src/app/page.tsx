@@ -5,7 +5,6 @@ import React from "react";
 function HomePage() {
   return (
     <main className=" min-h-screen">
-      {/* <audio src='/audios/english.mp4' controls /> */}
       <section className=" py-10 flex flex-col justify-center items-center gap-5 bg-gradient-to-b from-rose-400 to-rose-100  rounded-b-[4rem]">
         <div className="w-[15rem] aspect-square p-3 border border-primary bg-rose-200 rounded-full">
           <div className="relative w-full aspect-square mix-blend-multiply">

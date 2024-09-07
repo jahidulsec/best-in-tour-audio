@@ -1,6 +1,6 @@
 "use client";
 
-import { Circle, CircleCheck, Truck } from "lucide-react";
+import { Circle, CircleCheck } from "lucide-react";
 import React from "react";
 
 function LangButton({
