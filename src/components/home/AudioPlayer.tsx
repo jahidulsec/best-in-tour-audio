@@ -3,6 +3,7 @@
 import { Pause, Play } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import { Slider } from "../ui/slider";
 
 function AudioPlayer({play}: {play:string}) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -63,17 +64,16 @@ function AudioPlayer({play}: {play:string}) {
         </div>
       </div>
 
-      <input
-        type="range"
+      <Slider 
         min={0}
         max={duration}
-        value={currentTime}
-        onChange={(e) => {
-          if (audioRef.current) {
-            audioRef.current.currentTime = Number(e.target.value);
-            setCurrentTime(Number(e.target.value));
-          }
-        }}
+        value={[currentTime]}
+        onValueChange={(value) => {
+            if (audioRef.current) {
+              audioRef.current.currentTime = value[0];
+              setCurrentTime(value[0]);
+            }
+          }}
       />
 
       <audio
