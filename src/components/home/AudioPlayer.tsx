@@ -77,7 +77,7 @@ function AudioPlayer({play}: {play:string}) {
       />
 
       <audio
-        src={`/audios/${play || "italiano"}.mp4`}
+        src={`/audios/${play || "italiano.mp4"}`}
         controls
         className="hidden"
         ref={audioRef}

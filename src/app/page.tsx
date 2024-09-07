@@ -21,7 +21,7 @@ function HomePage() {
           <h1 className="text-pink-800 text-xl font-semibold leading-5 mb-3">
             Best in Rome <br /> Tour
           </h1>
-          <h2 className="text-pink-800 text-sm font-medium">Audio Book</h2>
+          <h2 className="text-pink-800 text-sm font-medium">Audio Guide</h2>
         </article>
       </section>
 

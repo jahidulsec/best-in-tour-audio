@@ -16,8 +16,8 @@ function AudioSection() {
             <h3 className='text-center text-sm text-primary'>Choose Language</h3>
 
             <div className="flex flex-col gap-5">
-                <LangButton play={play} title='Italiano' value='italiano' onClick={() => {setPlay('italiano')}} />
-                <LangButton play={play} title='English' value='english' onClick={() => {setPlay('english')}} />
+                <LangButton play={play} title='Italiano' value='italiano.mp4' onClick={() => {setPlay('italiano.mp4')}} />
+                <LangButton play={play} title='English' value='english.mp3' onClick={() => {setPlay('english.mp3')}} />
             </div>
         </section>
 
