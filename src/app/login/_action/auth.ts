@@ -23,7 +23,7 @@ export const adminLogin = async (prevData: unknown, formData: FormData) => {
 
   
 
-  if (process.env.NEXT_PUBLIC_ADMIN_PASSWORD !== data.password) {
+  if (process.env.ADMIN_PASSWORD !== data.password) {
     return { error: null, success: null, db: 'Invalid password' };
   }
 
