@@ -12,7 +12,6 @@ function AudioSection() {
     <>
       <section className="audio-list flex flex-col justify-center gap-8 px-4 py-8">
         <h3 className="text-center text-sm text-primary">Choose Language</h3>
-
         <div className="flex flex-col gap-5">
           <LangButton
             play={play}
